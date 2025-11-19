@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./bgc-img.jpg');
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#box{
+    padding: 50px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: rgba(27, 26, 26, 0.868);
+}
+
+
+.result-card {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.result-card h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #ff007f;
+}
+
+.score {
+    font-size: 22px;
+    font-weight: 600;
+    color: #00eaff;
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.7);
+}
+
+.restart-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff007f, #ff6600);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 0, 80, 0.4);
+}
+
+.restart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 100, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
