@@ -98,7 +98,7 @@ const reset = () => {
 const end = () => {
     document.getElementById('box').innerHTML = `
         <div class="result-card">
-            <h3> Thank you for playing!</h3>
+            <h3> Thank you for playing :)</h3>
             <p class="score">${right} / ${total} correct</p>
             <button class="restart-btn" onclick="location.reload()">Play Again</button>
         </div>
