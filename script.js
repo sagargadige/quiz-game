@@ -96,9 +96,12 @@ const reset = () => {
 
 
 const end = () => {
+
+    celebrate();  // 🎉 FIRE CELEBRATION
+
     document.getElementById('box').innerHTML = `
         <div class="result-card">
-            <h3> Thank you for playing :)</h3>
+            <h3 class="text-glow">Thank you for playing :)</h3>
             <p class="score">${right} / ${total} correct</p>
             <button class="restart-btn" onclick="location.reload()">Play Again</button>
         </div>
@@ -106,4 +109,22 @@ const end = () => {
 };
 
 
+
 loadQue();
+
+function celebrate() {
+    confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 }
+    });
+
+    // Fire again after 300ms (double blast effect)
+    setTimeout(() => {
+        confetti({
+            particleCount: 180,
+            spread: 100,
+            origin: { y: 0.4 }
+        });
+    }, 300);
+}
